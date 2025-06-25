@@ -36,9 +36,9 @@ jobs:
       - name: Instalando dependências
         run: yarn
 
-      # instalação do Playwright
-      - name: Instalando Playwright
-        run: yarn playwright install
+      # instalação do Playwright // Para realiar os testes deste projeto, são necessários apenas o uso do Mocha e assert
+      #- name: Instalando Playwright
+      #  run: yarn playwright install
 
       # executar os testes e2e
       - name: Executando Testes E2E
