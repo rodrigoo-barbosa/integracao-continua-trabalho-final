@@ -8,6 +8,10 @@ name: 'Execução Manual'
 on:
   workflow_dispatch:
 
+  push:               # disparo automático no push
+    branches:
+      - main
+
 # trabalho/tarefas dentro de pipelines = jobs
 jobs:
   e2e-tests:
