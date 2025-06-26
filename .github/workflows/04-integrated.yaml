@@ -70,7 +70,7 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: relatorio
-          path: ./playwright-report
+          path: mochawesome-report
 
   deploy:
     runs-on: ubuntu-latest
