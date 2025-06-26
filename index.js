@@ -5,16 +5,18 @@
 console.log("Aula inicial JS")
 console.error("Falha na execução")
 console.warn("Atenção")
-console.table([{
-  nome: 'Samuel',
-  turma: '02',
-  disciplina: 'Prog JS'
-},
-{
-  nome: 'Lucas',
-  turma: '02',
-  disciplina: 'Prog JS'
-}])
+console.table([
+  {
+    nome: 'Samuel',
+    turma: '02',
+    disciplina: 'Prog JS'
+  },
+  {
+    nome: 'Lucas',
+    turma: '02',
+    disciplina: 'Prog JS'
+  }
+])
 
 /**
  * Constantes e Variáveis
@@ -23,7 +25,7 @@ console.table([{
 // const - para informações que nunca mudam
 // var ou let - para informações que podem mudar
 
-// informacoes de um dog que nao mudam
+// informações de um dog que não mudam
 const nome = 'Loki'
 const raca = 'SRD / vira lata'
 const sexo = 'Macho'
@@ -31,12 +33,15 @@ const cor = 'Caramelo'
 const dataDeNascimento = '01/01/2020'
 const porte = 'M'
 
-// informacoes que mudam
+// informações que mudam
 let idade = 5         // Number
 let peso = 10.5       // Number
 let vacinado = true   // Boolean
 let castrado = false  // Boolean
 let tamanho = 'M'     // String
+
+// Exemplo de uso das variáveis para evitar warning de variáveis não usadas
+console.log(`O cachorro ${nome}, da raça ${raca}, tem ${idade} anos.`)
 
 // hoisting -> içamento ou elevação
 
@@ -54,27 +59,23 @@ const irmaos = [
 console.table(irmaos)
 
 /**
- * Tipos de Dados - cadeia, inteiro, real, logico, vetor, matriz
- * (funcoes - leia e escreva)
+ * Tipos de Dados - cadeia, inteiro, real, lógico, vetor, matriz
+ * (funções - leia e escreva)
  * 
-  
-  String - cadeia
-  Number - inteiros/real
-  Boolean - logico
-  Array - vetor/matriz
-  
-  undefined
-  null
-
-  BigInt = Number para números extremamente grandes 
-  Symbol = 'identificador único'
-
+ * String - cadeia
+ * Number - inteiros/real
+ * Boolean - lógico
+ * Array - vetor/matriz
+ * 
+ * undefined
+ * null
+ * 
+ * BigInt = Number para números extremamente grandes 
+ * Symbol = 'identificador único'
  */
 
 // const valor = "50"
-
 // console.log(valor)
-
 
 /**
  * Strings
@@ -90,7 +91,7 @@ let data = "05 de Abril"
 
 console.log("Aula 03 da Turma " + turma + " no Sábado dia 05 de Abril")
 
-console.log(`Aula ${ numeroAula } da Turma ${ turma } no Sábado dia ${ data }`)
+console.log(`Aula ${numeroAula} da Turma ${turma} no Sábado dia ${data}`)
 
 console.log(data.length)
 
@@ -113,7 +114,6 @@ console.log(nomesDeAlunos.replaceAll('a', 'i'))
 const conceitosLogica = "            inteiro real cadeia de caracteres...           "
 
 console.log(conceitosLogica.trim())
-
 
 let dataParaCortar = "05 de Abril"
 const cpf = "86189924611"
