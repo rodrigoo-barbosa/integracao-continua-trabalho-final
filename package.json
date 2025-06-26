@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "test": "mocha e2e/testes-exec.js --reporter mochawesome",
     "e2e": "mocha e2e/testes-exec.js --reporter mochawesome",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
